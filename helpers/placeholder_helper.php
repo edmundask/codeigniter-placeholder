@@ -31,7 +31,7 @@ if(!function_exists('placeholder'))
 		}
 
 		$params['height']    	= (empty($params['height'])) ? $params['width'] : $params['height'];
-		$params['text']      	= (empty($params['text'])) ? $params['width'] . ' x '. $params['height'] : $text;
+		$params['text']      	= (empty($params['text'])) ? $params['width'] . ' x '. $params['height'] : $params['text'];
 		$params['background']	= (empty($params['background'])) ? 'CCCCCC' : $params['height'];
 		$params['foreground']	= (empty($params['foreground'])) ? '969696' : $params['foreground'];
 
