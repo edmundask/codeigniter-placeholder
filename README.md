@@ -1,14 +1,18 @@
 # Placeholder helper for CodeIgniter
 
-This helper allows you to add placeholder images in your applications. It is extremely useful when prototyping the layout of the page.
+This helper allows you to add placeholder images and text in your applications. It is extremely useful when prototyping the layout of the page.
 
 # Usage
 
-`placeholder(width, height, text, bgcolor, color);`
+`placeholder(width, height, text, bgcolor, color);` - placeholder images
 
-The helper uses [placehold.it](http://placehold.it) service.
+`lipsum(paragraphs, length, extra_options)` - placeholder text
+
+The helper uses [placehold.it](http://placehold.it) and [loripsum.net](http://loripsum.net) services.
 
 ## Examples
+
+### Image placeholders
 
 - 300px square: `placeholder(300);`.
 - 200x100px rectangular: `placeholder(200, 100);`
@@ -20,6 +24,31 @@ Note that colors are represented as HEX values (when passing arguments to the fu
 You can also pass in an array:
 
 `placeholder(array('width' => 100, 'height' => 100, 'text' => 'Howdy', 'background' => '000000', 'foreground' => 'FFFFFF'));`
+
+### Text placeholders
+
+- 2 medium length paragraphs: `lipsum()`
+- 3 short paragraphs: `lipsum(3, 'short')`
+- 5 long paragraphs with decorations (bold, italic text) and links: `lipsum(3, 'long', array('decorate', 'link'))`
+
+Here is a full list of extra options that you can put in the array:
+
+- decorate - Add bold, italic and marked text
+- link - Add links
+- ul - Add unordered lists
+- ol - Add numbered lists
+- dl - Add description lists
+- bq - Add blockquotes
+- code - Add code samples
+- headers - Add headers
+- allcaps - Use ALL CAPS
+- prude - Prude version
+
+# CHANGELOG
+
+### 0.0.3
+
+* Add `lipsum()` helper function for generating dummy lorem ipsum paragraphs.
 
 # COPYRIGHT
 
