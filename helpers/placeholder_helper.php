@@ -39,4 +39,23 @@ if(!function_exists('placeholder'))
 	}
 }
 
+/**
+ * Generates lorem ipsum (dummy) text paragraphs
+ *
+ * @access	public
+ * @param 	integer	number of paragraphs to generate
+ * @param 	string 	length of each paragraph
+ * @param 	array  	extra options
+ * @return	string 	HTML
+ */
+if(!function_exists('lipsum'))
+{
+	function lipsum($paragraphs = 2, $length = 'medium', $flags = array())
+	{
+		$contents = file_get_contents('http://loripsum.net/api/' . $paragraphs . '/' . $length . join('/', $flags));
+
+		return $contents;
+	}
+}
+
 /* End of file placeholder_helper.php */
