@@ -52,6 +52,10 @@ Here is a full list of extra options that you can put in the array:
 
 # COPYRIGHT
 
+### Contributors
+
+- Thanks goes to **Brandon Probst** for suggesting text placeholders.
+
 Copyright (c) 2012 Edmundas Kondrašovas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy 
