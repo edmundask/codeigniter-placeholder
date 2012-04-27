@@ -756,6 +756,16 @@ header p {
   font-size: 14px;
   background-color: #FFE788;
 }
+#banner .spark {
+  position: fixed;
+  left: 50%;
+  margin-left: -200px;
+  padding: 10px 12px;
+  margin-top: 6px;
+  line-height: 14px;
+  font-size: 14px;
+  background-color: #FFE788;
+}
 #banner .downloads {
   float: right;
   margin: 0 45px 0 0;
